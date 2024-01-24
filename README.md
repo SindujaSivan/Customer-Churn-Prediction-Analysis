@@ -49,7 +49,7 @@ This synthetic dataset aims to simulate a scenario where customer features are g
 
 5. **k-Nearest Neighbors (KNN):**
    - A non-parametric classification algorithm that assigns an instance to the class most common among its k nearest neighbors in the feature space.
-   - 
+     
 ***Code Snippnet showing model parameter setting***
 ```python
 # Model list with models and their hyperparameter grids
@@ -77,8 +77,8 @@ models = {
              'weights': ['uniform', 'distance'],
              'p': [1, 2]}),
 }
-
 ```
+
 ***Code Snippnet showing model execution***
 
 ```python
