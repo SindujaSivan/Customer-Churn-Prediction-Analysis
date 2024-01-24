@@ -23,35 +23,14 @@ The dataset used for this project contains information about customers, includin
    - A non-parametric classification algorithm that assigns an instance to the class most common among its k nearest neighbors in the feature space.
 
 **Models Results:**
-1. **Random Forest Classifier:**
-   - Best Hyperparameters: {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 200}
-   - Cross-Validation Accuracy: 79.4%
-   - Test Set Accuracy: 78.95%
-   - Precision (class 0): 79%, Recall (class 1): 0%
 
-2. **Logistic Regression:**
-   - Best Hyperparameters: {'C': 0.001}
-   - Cross-Validation Accuracy: 79.41%
-   - Test Set Accuracy: 78.95%
-   - Precision (class 0): 79%, Recall (class 1): 0%
-
-3. **SVM:**
-   - Best Hyperparameters: {'C': 0.1, 'kernel': 'linear'}
-   - Cross-Validation Accuracy: 79.41%
-   - Test Set Accuracy: 78.95%
-   - Precision (class 0): 79%, Recall (class 1): 0%
-
-4. **Gradient Boosting:**
-   - Best Hyperparameters: {'learning_rate': 0.01, 'max_depth': 4, 'n_estimators': 100}
-   - Cross-Validation Accuracy: 79.44%
-   - Test Set Accuracy: 78.9%
-   - Precision (class 0): 79%, Recall (class 1): 0.24%
-
-5. **KNN:**
-   - Best Hyperparameters: {'n_neighbors': 7, 'p': 1, 'weights': 'uniform'}
-   - Cross-Validation Accuracy: 77.06%
-   - Test Set Accuracy: 77.0%
-   - Precision (class 0): 79%, Recall (class 1): 0.06%
+| Model                    | Best Hyperparameters                                     | Cross-Validation Accuracy | Test Set Accuracy | Precision (Class 0) | Recall (Class 1) |
+|--------------------------|----------------------------------------------------------|---------------------------|-------------------|---------------------|------------------|
+| Random Forest Classifier | {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 200} | 79.4%                     | 78.95%            | 79%                 | 0%               |
+| Logistic Regression      | {'C': 0.001}                                             | 79.41%                    | 78.95%            | 79%                 | 0%               |
+| SVM                      | {'C': 0.1, 'kernel': 'linear'}                           | 79.41%                    | 78.95%            | 79%                 | 0%               |
+| Gradient Boosting        | {'learning_rate': 0.01, 'max_depth': 4, 'n_estimators': 100} | 79.44%                    | 78.9%             | 79%                 | 0.24%            |
+| KNN                      | {'n_neighbors': 7, 'p': 1, 'weights': 'uniform'}          | 77.06%                    | 77.0%             | 79%                 | 0.06%            |
 
 **General Observations:**
 - Models exhibit challenges in predicting class 1 (churn), reflected in low recall values for this class across all models.
