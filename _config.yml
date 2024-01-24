@@ -1,0 +1,19 @@
+theme: jekyll-theme-minimal
+title: Customer Churn Prediction Analysis
+description: >
+  <h3>Predictive Analysis for Customer Retention</h3>
+  <p>
+    <br>
+    <br>
+    <b>Libraries:</b>
+    <ul>
+      <li>pandas</li>
+      <li>NumPy</li>
+      <li>scikit-learn</li>
+      <li>Matplotlib</li>
+      <li>Seaborn</li>
+      <li>imbalanced-learn</li>
+    </ul>
+    <br>
+  </p>
+---
