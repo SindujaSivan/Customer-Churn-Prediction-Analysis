@@ -1,5 +1,3 @@
-**Consolidated Project Summary: Customer Churn Prediction**
-
 **Objective:**
 The primary objective of this project is to predict customer churn, aiding businesses in proactively retaining customers. The project uses a structured dataset containing various customer features, and the target variable is binary, indicating whether a customer has churned (1) or not (0).
 
@@ -32,9 +30,10 @@ The generated dataset includes various features that might influence the likelih
 4. **Target Variable:**
    - **Churn:** Binary variable indicating customer churn (0 for no churn, 1 for churn). Churn is randomly assigned with a higher probability for non-churn (80% probability for 0 and 20% probability for 1).
 
-This synthetic dataset aims to simulate a scenario where customer features are generated randomly, including factors that may contribute to customer churn. It provides a basis for building and testing customer churn prediction models.
+This synthetic dataset aims to simulate a scenario where customer features are generated randomly, including factors that may contribute to customer churn. It provides a basis for building and testing customer churn prediction models. 
 ![Data](assets/Data.png)
-<span style="font-size: 8pt;">*Picture reference: [Synthetic Data]*</span>
+<span style="font-size: 8pt;">*Note: [Synthetic Data (First and last few features are shown above]*</span>
+
 **Models Used:**
 1. **Random Forest Classifier:**
    - A versatile ensemble learning method that builds multiple decision trees and merges their predictions to improve accuracy and robustness.
@@ -124,6 +123,7 @@ for model_name, (model, param_grid) in models.items():
 - The "Recall (Class 1)" column, the values are presented in percentage format. Additionally, precision and recall for Class 1 are provided, but the recall values for Class 1 in some models still seem low, indicating challenges in identifying the minority class despite applying SMOTE. Adjustments to the model or further tuning may be considered.
 
 ***Models Accuracy:***
+
 ![Accuracy](assets/Accuracy.png)
 
 Let's analyze the results for each model:
